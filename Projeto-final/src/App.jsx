@@ -9,10 +9,11 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-          <Navbar/>
-      </BrowserRouter>
-      
+    <div className='container'>
+        <BrowserRouter>
+            <Navbar/>
+        </BrowserRouter>
+    </div>
     </>
   )
 }
