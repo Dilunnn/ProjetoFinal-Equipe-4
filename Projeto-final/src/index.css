@@ -1,6 +1,4 @@
-#logonavbar{
-    width: 150px;
-}
+
 #CadastroNavbar{
     font-size: 11px;
     padding-top: 5px;
@@ -10,17 +8,12 @@
     text-align: center;
     padding-top: 2px;
     width: 70px;
-    height: 26px;
+    height: 30px;
     text-decoration: none;
     background-color: #C92071;
     color: white;
 }
-#CarrinhoNavbar{
-    width: 20px;
-}
+
 #BuscaNavbar {
   background-color: #F8F8F8;
-  height: 25px;
-  font-size: 10px;
-  margin: 5px;
 }
