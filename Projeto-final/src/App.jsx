@@ -13,7 +13,7 @@ function App() {
     <div className='container'>
         <BrowserRouter>
             <Navbar/>
-            
+            <AppRoutes/>
             <Footer/>
         </BrowserRouter>
     </div>
