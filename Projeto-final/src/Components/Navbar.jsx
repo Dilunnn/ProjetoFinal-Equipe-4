@@ -1,43 +1,46 @@
-import { Link } from 'react-router-dom'
-import logo from '../assets/logodigitalcollege.png'
-import carrinho from '../assets/Carrinho.png'
-import Busca from '../assets/Search.png'
-
-
+import { Link } from 'react-router-dom';
+import logoImg from '../assets/logodigitalcollege.png';
+import cartImg from '../assets/Carrinho.png';
+import buscaImg from '../assets/Search.png';
 
 const Navbar = () => {
   return (
-    <div className='row justify-content-between align-items-center'>
-      <div className="col-5 col-sm-2  text-center">
-        <Link to='/'>
-          <img src={logo} id='logonavbar' alt="Logo do site" />
-        </Link>
-      </div>
-      <div className="col col-sm-6">
-      <form className="d-flex align-items-baseline" role="search">
-            <input className="form-control" type="search" placeholder="Tênis" aria-label="Pesquisar" id="BuscaNavbar"/>
-            <button className="btn" type="submit">
-              <img src={Busca} alt="Buscar" style={{ height: "17px" }} />
-            </button>
-      </form>
+    <>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <div className="row w-100 align-items-center">
+            <div className="col-4 d-flex align-items-center">
+              <Link to="/" className="navbar-brand d-flex align-items-center gap-2">
+                <img src={logoImg} alt="Group Logo" height="30" className="d-inline-block align-text-top" />
+              </Link>
+            </div>
 
-      </div>
-      <div id='CadastroNavbar' className="col-1 ">
-        {/* Cadastre-se */}
-        <Link to='/cadastro' className='text-dark'>
-        Cadastre-se
-        </Link>
-      </div>
-      <div id='EntrarNavbar' className="col-1 border btn">
-        <Link to='/entrar' id='EntrarNavbar'>Entrar</Link>
-      </div>
-      <div className="col-2 col-sm-1 text-center">
-        <Link to='/carrinho'>
-        <img id='CarrinhoNavbar' src={carrinho} alt="Carrinho" />
-        </Link>
-      </div>
-    </div>
-  )
-}
+            <div className="col-4">
+              <form className="d-flex">
+                <input id='BuscaNavbar' className="form-control" type="search" placeholder="Tênis" aria-label="Search" />
+                <button className="btn" type="submit">
+                  <img src={buscaImg} alt="Buscar" height="20" />
+                </button>
+              </form>
+            </div>
 
-export default Navbar
+            <div className="col-4 d-flex justify-content-end align-items-center gap-2">
+              <Link to="/Cadastro" id='CadastroNavbar' className="btn fw-bold">
+                Cadastre-se
+              </Link>
+              <Link to="/Entrar" id='EntrarNavbar' className="btn">
+                Entrar
+              </Link>
+              <Link to="/carrinho"><img src={cartImg} alt="Carrinho" height="30" /></Link>
+            </div>
+          </div>
+          <div className='row'>
+
+          </div>
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;
