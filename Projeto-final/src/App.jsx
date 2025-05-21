@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import AppRoutes from './Routes/AppRoutes';
 import './App.css'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
     <div className='container'>
         <BrowserRouter>
             <Navbar/>
+            
+            <Footer/>
         </BrowserRouter>
     </div>
     </>
