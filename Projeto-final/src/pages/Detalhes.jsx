@@ -10,6 +10,7 @@ const Detalhes = () => {
       <main>
       {/* produto e detalhes do produto */}
 
+{/* -----------------------------------------------em baixo deu certo------------------------------------------------------------------ */}
     <div className={style.produtos_titulo}>
       {/*produtos relacionados*/}
       <p className={style.produtosR}>produtos relacionados</p>
@@ -27,7 +28,7 @@ const Detalhes = () => {
 
       {/* sujestões */}
     <div className={style.lista}>
-      <div className={"card"+ style.carta} style={{width: '18rem'}}>
+      <div className="card" id= {style.carta} style={{width: '18rem'}}>
         <img src="/K-Siss V8-Masculino.png" className="card-img-top" alt="..."/>
         <div className="card-body">
           <p style={{color: 'gray'}}>tenis</p>
@@ -36,16 +37,7 @@ const Detalhes = () => {
         </div>
       </div>
 
-      <div className={"card"+ style.carta} style={{width: '18rem'}}>
-        <img src="/K-Siss V8-Masculino.png" className="card-img-top" alt="..."/>
-        <div className="card-body">
-          <p style={{color: 'gray'}}>tenis</p>
-          <p className="card-text" style={{color: 'gray'}}>K-Siss V8 - masculino</p>
-          <span style={{textDecoration: 'line-through', color: 'gray'}}>$200</span> <span>$100</span>
-        </div>
-      </div>
-      
-      <div className={"card"+ style.carta} style={{width: '18rem'}}>
+       <div className="card" id= {style.carta} style={{width: '18rem'}}>
         <img src="/K-Siss V8-Masculino.png" className="card-img-top" alt="..."/>
         <div className="card-body">
           <p style={{color: 'gray'}}>tenis</p>
@@ -54,7 +46,7 @@ const Detalhes = () => {
         </div>
       </div>
 
-      <div className={"card"+ style.carta} style={{width: '18rem'}}>
+       <div className="card" id= {style.carta} style={{width: '18rem'}}>
         <img src="/K-Siss V8-Masculino.png" className="card-img-top" alt="..."/>
         <div className="card-body">
           <p style={{color: 'gray'}}>tenis</p>
@@ -63,8 +55,15 @@ const Detalhes = () => {
         </div>
       </div>
 
+       <div className="card" id= {style.carta} style={{width: '18rem'}}>
+        <img src="/K-Siss V8-Masculino.png" className="card-img-top" alt="..."/>
+        <div className="card-body">
+          <p style={{color: 'gray'}}>tenis</p>
+          <p className="card-text" style={{color: 'gray'}}>K-Siss V8 - masculino</p>
+          <span style={{textDecoration: 'line-through', color: 'gray'}}>$200</span> <span>$100</span>
+        </div>
+      </div>
 
-        {/* são 4 */}
       </div>
 
 </main>
