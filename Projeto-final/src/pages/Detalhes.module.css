@@ -1,10 +1,6 @@
  main{
     background-color: rgb(244, 244, 244);
  }
- .navebar a:hover{
-    color: red;
-    text-decoration: underline;
- }
  .caminho{
     font-size: smaller;
     color: gray;
