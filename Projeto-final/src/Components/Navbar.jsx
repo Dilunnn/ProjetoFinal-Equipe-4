@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import logoImg from '../assets/logodigitalcollege.png';
-import cartImg from '../assets/Carrinho.png';
-import buscaImg from '../assets/Search.png';
 
 const Navbar = () => {
   return (
@@ -15,7 +12,7 @@ const Navbar = () => {
                 className="navbar-brand d-flex align-items-center gap-2"
               >
                 <img
-                  src={logoImg}
+                  src="/assets/logodigitalcollege.png"
                   alt="Group Logo"
                   height="30"
                   className="d-inline-block align-text-top"
@@ -33,7 +30,7 @@ const Navbar = () => {
                   aria-label="Search"
                 />
                 <button className="btn" type="submit">
-                  <img src={buscaImg} alt="Buscar" height="20" />
+                  <img src="/assets/Search.png" alt="Buscar" height="20" />
                 </button>
               </form>
             </div>
@@ -46,7 +43,7 @@ const Navbar = () => {
                 Entrar
               </Link>
               <Link to="/carrinho">
-                <img src={cartImg} alt="Carrinho" height="30" />
+                <img src="/assets/Carrinho.png" alt="Carrinho" height="30" />
               </Link>
             </div>
           </div>

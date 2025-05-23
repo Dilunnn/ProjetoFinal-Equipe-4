@@ -1,0 +1,38 @@
+/* src/components/Carrinho.module.css */
+.pageContainer {
+  background-color: #F9F8FE;
+}
+
+.fundo {
+  background-color: #ffff;
+  margin-bottom: 40px;
+}
+
+.btnEntrar {
+  background: #C92071;
+}
+
+.barraDePesquisa {
+  background-color: #f8f8f8;
+}
+
+.produtoImgContainer {
+  background: #E2E3FF;
+  height: 127px;
+  width: 137px;
+  margin: 10px;
+}
+
+.sapatos {
+  background-color: #ffff;
+  width: 203px;
+}
+
+.freteCupom {
+  height: 81px;
+}
+
+.btnOk {
+  border-radius: 8px;
+  margin-left: 3px;
+}
