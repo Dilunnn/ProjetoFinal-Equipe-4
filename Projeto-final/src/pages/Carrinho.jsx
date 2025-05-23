@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Carrinho.module.css'; // Import do CSS Module
+import produto from '../assets/Produto.png'
 
 const Carrinho = () => {
   const [quantidade, setQuantidade] = useState(1);
@@ -31,7 +32,7 @@ const Carrinho = () => {
                 <div className="row">
                   <div className="col-5 d-flex">
                     <div className={`col-4 align-content-center d-flex flex-wrap rounded-3 justify-content-center ${styles.produtoImgContainer}`}>
-                      <img src="/assets/Produto.png" alt="produto" />
+                      <img src={produto} width='120px' alt="produto" />
                     </div>
                     <div className="col-10">
                       <p className="fw-bold">Tênis Nike Revolution 6 Next Nature Masculino</p>
@@ -126,7 +127,7 @@ const Carrinho = () => {
               <div className="row">
                 {[1, 2, 3, 4].map((item) => (
                   <div key={item} className="col-3">
-                    <img src="/assets/Produto.png" className={styles.sapatos} alt="" />
+                    <img src={produto} className={styles.sapatos} alt="" />
                     <div>
                       <p className="opacity-25 pt-2 m-0">Tênis</p>
                       <p className="opacity-75">K-Swiss V8 - Masculino</p>
