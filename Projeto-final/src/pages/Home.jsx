@@ -2,10 +2,6 @@ import React from "react";
 import styles from "./Home.module.css";
 
 
-
-
-
-
 const Home = () => {
   return (
     <>
@@ -24,7 +20,7 @@ const Home = () => {
           <button className={styles.btnHero}>Ver Ofertas</button>
         </div>
         <div className={styles.heroImg}>
-          <img src="../assets/ImagesHome/ddd 1.svg" alt="" />
+          <img src="Imagens/White-Sneakers-PNG-Clipart 1.svg" alt="" />
         </div>
       </section>
 
@@ -33,13 +29,17 @@ const Home = () => {
         <div className="row g-4">
           {/* Card 1 */}
           <div className="col-md-4">
-            <div className={styles.card.cardCustom}>
+            <div className={styles.card.cardCustom } >
               <span className={styles.badgeDesconto}>30% OFF</span>
               <h5 className="mt-3">
                 Novo drop <br /> <strong>Supreme</strong>
               </h5>
               <button className={styles.btnComprar}>Comprar</button>
-              <img src="Imagens/Mask group.svg" alt="Supreme" />
+              <img
+                src="Imagens/Mask group.svg"
+                alt="Supreme"
+               
+              />
             </div>
           </div>
 
@@ -51,7 +51,11 @@ const Home = () => {
                 Coleção <br /> <strong>Adidas</strong>
               </h5>
               <button className={styles.btnComprar}>Comprar</button>
-              <img src="Imagens/ddd 1.svg" alt="Adidas" />
+              <img
+                src="Imagens/ddd 1.svg"
+                alt="Adidas"
+                
+              />
             </div>
           </div>
 
@@ -66,6 +70,7 @@ const Home = () => {
               <img
                 src="Imagens/d9db11953a2d185d37246bb1f500c957 1.svg"
                 alt="Beats"
+              
               />
             </div>
           </div>
