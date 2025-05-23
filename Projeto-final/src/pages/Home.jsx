@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Home.module.css";
 
-
 const Home = () => {
   return (
     <>
@@ -70,7 +69,7 @@ const Home = () => {
               <img
                 src="Imagens/d9db11953a2d185d37246bb1f500c957 1.svg"
                 alt="Beats"
-              
+                class={styles.cardImg}
               />
             </div>
           </div>
