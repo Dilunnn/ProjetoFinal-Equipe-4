@@ -1,10 +1,22 @@
 import React from 'react'
-
+import style from './Cadastro.Module.Css'
 const Cadrasto = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+     <h1>Finalizar Compra </h1> <br/>
+<br/>
+<container>
+
+</container>
+
+
+
+
+
+
+
+
+    </>
   )
 }
 
