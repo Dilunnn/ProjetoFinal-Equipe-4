@@ -14,7 +14,6 @@ const Carrinho = () => {
   const aumentarQuantidade = () => setQuantidade(prev => prev + 1);
   const diminuirQuantidade = () => quantidade > 1 && setQuantidade(prev => prev - 1);
   const finalizarCompra = () => alert('Finalizando compra...');
-
   return (
     <div className={styles.pageContainer}>
       <main>
@@ -127,7 +126,7 @@ const Carrinho = () => {
               <div className="row">
                 {[1, 2, 3, 4].map((item) => (
                   <div key={item} className="col-3">
-                    <img src="/assets/produto1.png" className={styles.sapatos} alt="" />
+                    <img src="/assets/Produto.png" className={styles.sapatos} alt="" />
                     <div>
                       <p className="opacity-25 pt-2 m-0">Tênis</p>
                       <p className="opacity-75">K-Swiss V8 - Masculino</p>
