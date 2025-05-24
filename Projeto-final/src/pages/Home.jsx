@@ -4,9 +4,10 @@ import styles from "./Home.module.css";
 const Home = () => {
   return (
     <>
-      <section className={styles.hero}>
+      {/* Seção Principal */}
+      <section className={styles.hero} style={{ backgroundColor: '#f8f9fa' }} >
         <div className={styles.heroText}>
-          <span className={styles.destaque}>
+          <span className={styles.destaque} style={{ color: '#F6AA1C' }}>
             Melhores ofertas personalizadas
           </span>
           <h1>
@@ -19,179 +20,220 @@ const Home = () => {
           <button className={styles.btnHero}>Ver Ofertas</button>
         </div>
         <div className={styles.heroImg}>
-          <img src="Imagens/White-Sneakers-PNG-Clipart 1.svg" alt="" />
+          <img src="Imagens/White-Sneakers-PNG-Clipart 1.svg" alt="Tênis Nike" />
         </div>
       </section>
 
+      {/* Coleções em Destaque */}
       <div className="container py-5">
         <h5 className="fw-bold mb-4">Coleções em destaque</h5>
         <div className="row g-4">
-          {/* Card 1 */}
+
           <div className="col-md-4">
-            <div className={styles.card.cardCustom } >
+            <div className={styles.cardCustom}>
               <span className={styles.badgeDesconto}>30% OFF</span>
               <h5 className="mt-3">
-                Novo drop <br /> <strong>Supreme</strong>
+                Novo drop <br />
+                <strong>Supreme</strong>
               </h5>
               <button className={styles.btnComprar}>Comprar</button>
               <img
                 src="Imagens/Mask group.svg"
                 alt="Supreme"
-               
+                className={styles.cardImg}
               />
             </div>
           </div>
 
-          {/* Card 2 */}
           <div className="col-md-4">
-            <div className={styles.card.cardCustom}>
+            <div className={styles.cardCustom}>
               <span className={styles.badgeDesconto}>30% OFF</span>
               <h5 className="mt-3">
-                Coleção <br /> <strong>Adidas</strong>
+                Coleção <br />
+                <strong>Adidas</strong>
               </h5>
               <button className={styles.btnComprar}>Comprar</button>
               <img
                 src="Imagens/ddd 1.svg"
                 alt="Adidas"
-                
+                className={styles.cardImg}
               />
             </div>
           </div>
 
-          {/* Card 3 */}
           <div className="col-md-4">
-            <div className={styles.card.cardCustom}>
+            <div className={styles.cardCustom}>
               <span className={styles.badgeDesconto}>30% OFF</span>
               <h5 className="mt-3">
-                Novo <br /> <strong>Beats Bass</strong>
+                Novo <br />
+                <strong>Beats Bass</strong>
               </h5>
               <button className={styles.btnComprar}>Comprar</button>
               <img
                 src="Imagens/d9db11953a2d185d37246bb1f500c957 1.svg"
                 alt="Beats"
-                class={styles.cardImg}
+                className={styles.cardImg}
               />
             </div>
           </div>
+
         </div>
       </div>
 
-      <h3 className={styles.destaque}>Coleções em Destaque</h3>
+      {/* Ícones de Categorias */}
+      <div className="container text-center py-4">
+        <h3 className={styles.destaque}>Coleções em Destaque</h3> <br />
+        <div className={styles.icones}>
 
-      <div className={styles.icones}>
-        <img src="Imagens/Frame 10.png" alt="Camisa" />
-        <img src="Imagens/Frame 11.png" alt="calca" />
-        <img src="Imagens/Frame 13.png" alt="tenis" />
-        <img src="Imagens/Frame 14.png" alt="fone" />
+          <img src="Imagens/Frame 10.png" alt="Camisa" />
+          <img src="Imagens/Frame 11.png" alt="Calça" />
+          <img src="Imagens/Frame 13.png" alt="Tênis" />
+          <img src="Imagens/Frame 14.png" alt="Fone" />
+        </div>
       </div>
 
-      <section className={styles.produtos}>
-        <h2>Produtos em Alta</h2>
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+      {/* Produtos em Alta */}
+      <section className="container py-5">
+        <h2 className={`text-center mb-4 ${styles.titulo}`}>Produtos em Alta</h2>
+
+        <div className="row g-4 mb-4">
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <span className={styles.badgeDesconto}>30% OFF</span>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <span className={styles.badgeDesconto}>30% OFF</span>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
         </div>
-        <br />
-        <div className={styles.cards}>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+        <div className="row g-4">
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <img
-              src="Imagens/Layer 1aa 2.png"
-              alt="Tênis K-Swiss V8 Masculino"
-            />
-            <p className={styles.categoria}>Tênis</p>
-            <p className={styles.nome}>K-Swiss V8 - Masculino</p>
-            <div className={styles.precos}>
-              <p className={styles.precoAntigo}>R$200</p>
-              <p className={styles.precoNovo}>R$100</p>
+
+          <div className="col-lg-3 col-md-6">
+            <div className={styles.card}>
+              <img
+                src="Imagens/Layer 1aa 2.png"
+                alt="Tênis K-Swiss V8 Masculino"
+                className="img-fluid"
+              />
+              <p className={styles.categoria}>Tênis</p>
+              <p className={styles.nome}>K-Swiss V8 - Masculino</p>
+              <div className={styles.precos}>
+                <p className={styles.precoAntigo}>R$200</p>
+                <p className={styles.precoNovo}>R$100</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.ofertaEspecial}>
-        <div className={styles.container}>
+      {/* Oferta Especial */}
+      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6 text-center">
               <img
@@ -202,18 +244,16 @@ const Home = () => {
             </div>
             <div className="col-md-6">
               <div className={styles.subtitulo}>Oferta especial</div>
-              <h2 className="fw-bold text-black">
+              <h2 className="fw-bold text-dark mb-3">
                 Air Jordan edição de colecionador
               </h2>
-              <p className="text-muted">
+              <p className="text-muted mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Laboriosam cumque harum molestias atque doloremque ut et
                 perferendis deserunt distinctio hic assumenda esse, voluptatum
                 odit error quae ipsam facere libero repellat?
               </p>
-              <a href="#" className={styles.btnOferta}>
-                Ver Oferta
-              </a>
+              <button className={styles.btnOferta}>Ver Oferta</button>
             </div>
           </div>
         </div>

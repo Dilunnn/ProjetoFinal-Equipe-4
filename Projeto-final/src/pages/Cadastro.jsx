@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Cadastro.Module.Css'
+
 const Cadrasto = () => {
   return (
     <>
