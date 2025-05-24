@@ -11,7 +11,7 @@
 
 .heroText {
     max-width: 500px;
-    color: #C92071;
+    color: black;
 }
 
 .heroText .destaque {
@@ -66,41 +66,45 @@ h3 {
     margin: 2rem 0 1rem;
 }
 
-  body {
-     background-color: #f9f8ff;
-   }
-   .cardCustom {
-     background-color: #e6ecf8;
-     border: none;
-     border-radius: 12px;
-     padding: 20px;
-     position: relative;
-     text-align: left;
-   }
-   .badgeDesconto {
-     background-color: #e8ff5e;
-     color: #000;
-     font-weight: bold;
-     font-size: 0.8rem;
-     padding: 5px 10px;
-     border-radius: 15px;
-   }
-   .btnComprar {
-     background-color: #f5f1ff;
-     color: #a20074;
-     font-weight: 600;
-     border: none;
-     padding: 6px 20px;
-     border-radius: 8px;
-     margin-top: 10px;
-   }
-   .cardImg {
-     max-width: 100px;
-     position: absolute;
-     bottom: 10px;
-     right: 10px;
-     
-   }
+body {
+    background-color: #f9f8ff;
+}
+
+.cardCustom {
+    background-color: #e6ecf8;
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+}
+
+.badgeDesconto {
+    background-color: #e8ff5e;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.btnComprar {
+    background-color: #f5f1ff;
+    color: #a20074;
+    font-weight: 600;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.cardImg {
+    max-width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
 
 
 /* Icons Section */
@@ -113,7 +117,7 @@ h3 {
 }
 
 .icones img {
-    max-height: 60px;
+    width: 100px;
     user-select: none;
 }
 
@@ -215,8 +219,13 @@ h3 {
 }
 
 .btnOferta {
-    background: #d63384;
-    color: #fff;
-    border-radius: 8px;
-    padding: 10px 25px;
+    background-color: #C92071;
+    border: none;
+    color: white;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
