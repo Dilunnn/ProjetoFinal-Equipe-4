@@ -228,15 +228,6 @@ const Navbar = () => {
 
           {/* Ações Mobile */}
           <div className="d-flex align-items-center gap-2">
-            {/* Botão de Busca Mobile */}
-            <button 
-              className="btn p-1" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#mobileSearch"
-            >
-              <img src="/Search.png" alt="Buscar" height="20" />
-            </button>
 
             {/* Carrinho Mobile */}
             <div className="carrinho-hover">
@@ -379,20 +370,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Barra de Busca Mobile Colapsável */}
-        <div className="collapse d-lg-none mt-2" id="mobileSearch">
-          <form className="d-flex">
-            <input
-              className="form-control"
-              type="search"
-              placeholder="Pesquisar produto..."
-              aria-label="Search"
-            />
-            <button className="btn" type="submit">
-              <img src="/Search.png" alt="Buscar" height="20" />
-            </button>
-          </form>
-        </div>
 
         {/* Menu Mobile Colapsável */}
         <div className="collapse navbar-collapse d-lg-none" id="navbarNav">
@@ -406,6 +383,19 @@ const Navbar = () => {
               <Link to="/Entrar" className="nav-link">
                 Entrar
               </Link>
+            </li>
+            <li>
+            <form className="d-flex">
+            <input
+              className="form-control"
+              type="search"
+              placeholder="Pesquisar produto..."
+              aria-label="Search"
+            />
+            <button className="btn" type="submit">
+              <img src="/Search.png" alt="Buscar" height="20" />
+            </button>
+            </form> 
             </li>
           </ul>
         </div>
