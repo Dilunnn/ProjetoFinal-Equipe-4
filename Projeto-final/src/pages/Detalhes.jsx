@@ -16,6 +16,11 @@ let imagens =[
   "sap verde.png"
 ]
 const [imagemAtual, setImagemAtual]= useState(imagens[0])
+const [trintaN, setTrintaN]= useState(true)
+const [quarenta, setQuarenta]= useState(true)
+const [quarentaUm, setQuarentaUm]= useState(true)
+const [quarentaD, setQuarentaD]= useState(true)
+const [quarentaT, setQuarentaT]= useState(true)
 
   return (
     
@@ -32,7 +37,7 @@ const [imagemAtual, setImagemAtual]= useState(imagens[0])
         <div id={style.principal} className=" card mb-3">
           <div className="row g-0">
             {/* imagem  */}
-            <div className="imagemP col-md-4 foto">
+            <div className={`${style.imagemP} col-md-4 foto`}>
               <img
                 src={imagemAtual}
                 className="img-fluid rounded-start"
@@ -159,11 +164,30 @@ const [imagemAtual, setImagemAtual]= useState(imagens[0])
               
                 <section className="tamanhos">
                   <p style={{color: "gray"}}>tamanhos</p>
-                  <button id={style.btn_tamanho} className="btn">39</button>
-                  <button id={style.btn_tamanho} className="btn">40</button>
-                  <button id={style.btn_tamanho} className="btn">41</button>
-                  <button id={style.btn_tamanho} className="btn">42</button>
-                  <button id={style.btn_tamanho} className="btn">43</button>
+                  <button onClick={() => setTrintaN(!trintaN)}
+      style={{
+        backgroundColor: trintaN ? 'white' : '#C92071',
+        color: trintaN ? 'black':'white', }} id={style.btn_tamanho} className="btn">39</button>
+
+                  <button onClick={() => setQuarenta(!quarenta)}
+      style={{
+        backgroundColor: quarenta ? 'white' : '#C92071',
+        color: quarenta ? 'black':'white', }}  id={style.btn_tamanho} className="btn">40</button>
+
+                  <button onClick={() => setQuarentaUm(!quarentaUm)}
+      style={{
+        backgroundColor: quarentaUm ? 'white' : '#C92071',
+        color: quarentaUm ? 'black':'white', }} id={style.btn_tamanho} className="btn">41</button>
+
+                  <button onClick={() => setQuarentaD(!quarentaD)}
+      style={{
+        backgroundColor: quarentaD ? 'white' : '#C92071',
+        color: quarentaD ? 'black':'white', }} id={style.btn_tamanho} className="btn">42</button>
+
+                  <button onClick={() => setQuarentaT(!quarentaT)}
+      style={{
+        backgroundColor: quarentaT ? 'white' : '#C92071',
+        color: quarentaT ? 'black':'white', }} id={style.btn_tamanho} className="btn">43</button>
                 </section>
 
                 {/* opções de cores do sapato */}
@@ -186,6 +210,43 @@ const [imagemAtual, setImagemAtual]= useState(imagens[0])
                       />
                     </svg>
                   </button>
+
+                  <button className={`${style.azul} ${style.btn_cor} btn`}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle
+                        style={{color:"rgb(0, 174, 255)"}}
+                        cx="8"
+                        cy="8"
+                        r="8"
+                      />
+                    </svg>
+                  </button>
+
+                  <button className={`${style.azul} ${style.btn_cor} btn`}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <circle
+                        style={{color:"rgb(0, 174, 255)"}}
+                        cx="8"
+                        cy="8"
+                        r="8"
+                      />
+                    </svg>
+                  </button>
+
                  <button className={`${style.laranja} ${style.btn_cor} btn`}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -241,6 +302,7 @@ const [imagemAtual, setImagemAtual]= useState(imagens[0])
 
                 {/* compra  */}
                 <div className="compra">
+                   <Link to='/carrinho' >
                   <button
                     style={{color: "white"}}
                     type="button"
@@ -248,6 +310,7 @@ const [imagemAtual, setImagemAtual]= useState(imagens[0])
                   >
                     comprar
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -272,7 +335,7 @@ const [imagemAtual, setImagemAtual]= useState(imagens[0])
     <div className={style.produtos_titulo}>
       {/*produtos relacionados*/}
       <p className={style.produtosR}>produtos relacionados</p>
-      <Link to='/produtos' > ver todos  
+      <Link className={style.ver_todos} to='/produtos' > ver todos  
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" 
         width="16"
