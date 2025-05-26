@@ -1,5 +1,3 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom'
 import style from './Detalhes.module.css'
 import { useState } from 'react';
