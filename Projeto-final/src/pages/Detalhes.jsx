@@ -2,10 +2,23 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from 'react-router-dom'
 import style from './Detalhes.module.css'
+import { useState } from 'react';
 
 
 const Detalhes = () => {
+
+let imagens =[
+  "White-Sneakers-PNG-Clipart 1.svg",
+  "sap amarelo.png",
+  "sap azul.jpg",
+  "sap ciano.png",
+  "sap laranja.png",
+  "sap verde.png"
+]
+const [imagemAtual, setImagemAtual]= useState(imagens[0])
+
   return (
+    
     <div>
       <main>
       {/* produto e detalhes do produto */}
@@ -21,7 +34,7 @@ const Detalhes = () => {
             {/* imagem  */}
             <div className="imagemP col-md-4 foto">
               <img
-                src="White-Sneakers-PNG-Clipart 1.svg"
+                src={imagemAtual}
                 className="img-fluid rounded-start"
                 alt="sapato nike"
               />
@@ -242,33 +255,18 @@ const Detalhes = () => {
         </div>
       </div>
       {/* outras opções de sapatos  */}
-      <div className={style.opções}>
-        <img
-          style={{backgroundColor: "azure"}}
-          src="White-Sneakers-PNG-Clipart 1.svg"
-          alt=""
-        />
-        <img
-          style={{backgroundColor: "rgb(255, 205, 98)"}}
-          src="White-Sneakers-PNG-Clipart 1.svg"
-          alt=""
-        />
-        <img
-          style={{backgroundColor: "rgb(255, 160, 160)"}}
-          src="White-Sneakers-PNG-Clipart 1.svg"
-          alt=""
-        />
-        <img
-          style={{backgroundColor: "rgba(87, 35, 35, 0.571)"}}
-          src="White-Sneakers-PNG-Clipart 1.svg"
-          alt=""
-        />
-        <img
-          style={{backgroundColor: "rgb(198, 166, 165)"}}
-          src="White-Sneakers-PNG-Clipart 1.svg"
-          alt=""
-        />
-      </div>
+     <div className={style.opções}>
+  {imagens.map((img, index) => (
+    <img
+      key={index}
+      src={img}
+      alt={`Miniatura ${index}`}
+      onClick={() => setImagemAtual(img)}
+      style={{ cursor: 'pointer', width: '60px', margin: '5px' }}
+    />
+  ))}
+</div>
+
 
 {/* -----------------------------------------------em baixo deu certo------------------------------------------------------------------ */}
     <div className={style.produtos_titulo}>
